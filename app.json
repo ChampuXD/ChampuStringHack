@@ -1,0 +1,46 @@
+{
+    "name": "ᴄʜᴀᴍᴘᴜ sᴛʀɪɴɢ ʜᴀᴄᴋ",
+    "description": "ᴛʜɪs ʀᴇᴘᴏ ɪs ɢᴇɴᴇʀᴀʟʟʏ ᴜsᴇ ғᴏʀ ᴅᴇʟᴇᴛᴇ ᴀᴄᴄᴏᴜɴᴛ ʙʏ ᴜsɪɴɢ sᴛʀɪɴɢ sᴇssɪᴏɴ",
+    "logo": "https://telegra.ph/file/30127eafe764b7ca80576.jpg",
+    "keywords": [
+        "pytgcalls",
+        "telegram bot",
+        "banall"
+    ],
+    "website": "https://t.me/TheChampu",
+    "repository": "https://github.com/ChampuXD/ChampuStringHack",
+    "success_url": "https://t.me/TheShivanshu",
+    "env": {
+        "API_ID": {
+            "description": "ɢᴇᴛ ᴀᴘɪ ɪᴅ ғʀᴏᴍ https://my.telegram.org ",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "ɢᴇᴛ ᴀᴘɪ ʜᴀsʜ ғʀᴏᴍ https://my.telegram.org",
+            "required": true
+        },
+        "TOKEN": {
+            "description": "ɢᴇᴛ ʙᴏᴛ's ᴛᴏᴋᴇɴ ғʀᴏᴍ ʙᴏᴛғᴀᴛʜᴇʀ",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "Basic"
+        }
+    },
+    "stack": "container"
+    }
