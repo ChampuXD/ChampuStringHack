@@ -7,7 +7,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 try:
     mongodb = AsyncIOMotorClient(Config.MONGO_URL).Champu
 except:
-    print("Please Change Your MongoDB")
+    print("ᴘʟᴇᴀsᴇ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ᴍᴏɴɢᴏᴅʙ")
     sys.exit()
 
 

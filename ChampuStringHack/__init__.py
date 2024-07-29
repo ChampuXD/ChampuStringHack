@@ -17,7 +17,7 @@ START_PIC = Config.START_PIC
 
 
 if not START_PIC:
-    START_PIC = "https://telegra.ph/file/73cd2c73ff6d19923774c.jpg"
+    START_PIC = "https://telegra.ph/file/73c4fc35637d6eb5cd024.jpg"
 
 #rich
 LOG = Console()
@@ -27,7 +27,7 @@ logging.basicConfig(level=logging.INFO)
 
 #client
 app = Client(
-    "SupremeStark",
+    "TheChampuBot",
     api_id = API_ID,
     api_hash = API_HASH,
     bot_token = TOKEN )
@@ -39,8 +39,8 @@ async def ChampuStringHack():
     header = Table(show_header=True, header_style="bold green")
     header.add_column(LOG_TEXT)
     LOG.print(header)
-    LOG.print(f"[bold cyan]𝐌𝐑.𝐃𝐀𝐗𝐗")
-    LOG.print("[bold yellow]𝐘𝐨𝐮𝐫 𝐁𝐨𝐭 𝐒𝐭𝐚𝐫𝐭.............")
+    LOG.print(f"[bold cyan]ʙᴀᴅᴏ ʙᴀᴅɪ ")
+    LOG.print("[bold yellow]ʏᴏᴜʀ ʙᴏᴛ sᴛᴀʀᴛ.............")
     await app.start()    
     
 

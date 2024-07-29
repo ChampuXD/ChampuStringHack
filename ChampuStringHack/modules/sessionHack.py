@@ -1,7 +1,7 @@
 import os
 from ChampuStringHack import app,API_ID,API_HASH
 from pyrogram import filters , Client
-from ChampuStringHack.Helpers.steve import (
+from ChampuStringHack.Helpers.Champu import (
     users_gc,
     user_info,
     banall,

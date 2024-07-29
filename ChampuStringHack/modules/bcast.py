@@ -17,7 +17,7 @@ async def braodcast_message(client, message):
         y = message.chat.id
     else:
         if len(message.command) < 2:
-            return await message.reply_text("**Usage**:\n/broadcast [MESSAGE] or [Reply to a Message]")
+            return await message.reply_text("**ᴜsᴀɢᴇ**:\n/ʙʀᴏᴀᴅᴄᴀsᴛ [ᴍᴇssᴀɢᴇ] ᴏʀ [ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ]")
         query = message.text.split(None, 1)[1]
         if "-pin" in query:
             query = query.replace("-pin", "")
@@ -28,7 +28,7 @@ async def braodcast_message(client, message):
         if "-user" in query:
             query = query.replace("-user", "")
         if query == "":
-            return await message.reply_text("Please provide some text to broadcast.")
+            return await message.reply_text("ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ʙʀᴏᴀᴅᴄᴀsᴛ.")
 
     IS_BROADCASTING = True
 
@@ -70,7 +70,7 @@ async def braodcast_message(client, message):
             except Exception:
                 continue
         try:
-            await message.reply_text("**Broadcasted Message In {0}  Chats with {1} Pins from Bot.**".format(sent, pin))
+            await message.reply_text("**ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇ ɪɴ {𝟶}  ᴄʜᴀᴛs ᴡɪᴛʜ {𝟷} ᴘɪɴs ғʀᴏᴍ ʙᴏᴛ.**".format(sent, pin))
         except:
             pass
 
@@ -97,7 +97,7 @@ async def braodcast_message(client, message):
             except Exception:
                 pass
         try:
-            await message.reply_text("**Broadcasted Message to {0} Users.**".format(susr))
+            await message.reply_text("**ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇ ᴛᴏ {0} ᴜsᴇʀs.**".format(susr))
         except:
             pass
     IS_BROADCASTING = False
